@@ -47,15 +47,16 @@
 
   <!-- ============ Green Terminal ============ -->
   <rect x="380" y="120" width="240" height="160" class="green-box" />
-  <text x="500" y="148" text-anchor="middle" class="box-title">Green Terminal</text>
-  <text x="500" y="168" text-anchor="middle" class="pin-label">Numbering starts from the right of the screw face (L→R: 5 4 3 2 1)</text>
+  <text x="500" y="146" text-anchor="middle" class="box-title">Green Terminal</text>
+  <text x="500" y="166" text-anchor="middle" class="pin-label">Numbered from screw-face right</text>
+  <text x="500" y="182" text-anchor="middle" class="pin-label">(L→R: 5 4 3 2 1)</text>
 
   <!-- Sub-labels above holes -->
-  <text x="410" y="200" text-anchor="middle" class="pin-sub">RX</text>
-  <text x="450" y="200" text-anchor="middle" class="pin-label">5V</text>
-  <text x="490" y="200" text-anchor="middle" class="pin-sub">TX</text>
-  <text x="530" y="200" text-anchor="middle" class="pin-sub">GND</text>
-  <text x="570" y="200" text-anchor="middle" class="pin-label">NC</text>
+  <text x="410" y="204" text-anchor="middle" class="pin-sub">RX</text>
+  <text x="450" y="204" text-anchor="middle" class="pin-label">5V</text>
+  <text x="490" y="204" text-anchor="middle" class="pin-sub">TX</text>
+  <text x="530" y="204" text-anchor="middle" class="pin-sub">GND</text>
+  <text x="570" y="204" text-anchor="middle" class="pin-label">NC</text>
 
   <!-- Holes -->
   <circle cx="410" cy="230" r="18" class="hole-used" />
