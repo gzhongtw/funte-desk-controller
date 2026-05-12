@@ -68,7 +68,7 @@
 
 ![綠色端子台特寫](docs/images/green-terminal-closeup.jpg)
 
-## ESPHome 韌體
+## ESPHome 韌體（來源 [Rocka84 README](https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller)）
 
 在 Home Assistant 上安裝 **ESPHome Builder** 附加元件，新建裝置，把整份 [esphome/desk.yaml](esphome/desk.yaml) 貼進去（保留 Builder 自動生成的 `api: encryption: key:` 跟 `ota: password:`）。
 

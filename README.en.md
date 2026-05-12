@@ -68,7 +68,7 @@ Green terminal block close-up (screw face — the direction used for pin numberi
 
 ![Green Terminal Close-up](docs/images/green-terminal-closeup.jpg)
 
-## ESPHome Firmware
+## ESPHome Firmware (based on [Rocka84 README](https://github.com/Rocka84/esphome_components/tree/master/components/jiecang_desk_controller))
 
 Install the **ESPHome Builder** add-on in Home Assistant, create a new device, and paste in the contents of [esphome/desk.yaml](esphome/desk.yaml) (keep the Builder-generated `api: encryption: key:` and `ota: password:` lines).
 
