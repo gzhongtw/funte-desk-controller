@@ -1,0 +1,32 @@
+# HA 新版 template integration 寫法
+# 把這段塞進 configuration.yaml（如果已經有 template: 區塊就把 - cover: 那塊接到下面）
+# 重啟後會多出一個 cover.standing_desk
+# 高度 70.6 cm = 0%（坐姿、closed）
+# 高度 119  cm = 100%（站立、open）
+
+template:
+  - cover:
+      - name: 升降桌
+        unique_id: standing_desk_cover
+        device_class: shade
+        position: >-
+          {% set h = states('sensor.standing_desk_height') | float(0) %}
+          {{ ((h - 70.6) / (119 - 70.6) * 100) | round(0) }}
+        open_cover:
+          - action: button.press
+            target:
+              entity_id: button.standing_desk_move_up
+        close_cover:
+          - action: button.press
+            target:
+              entity_id: button.standing_desk_move_down
+        stop_cover:
+          - action: button.press
+            target:
+              entity_id: button.standing_desk_stop
+        set_cover_position:
+          - action: number.set_value
+            target:
+              entity_id: number.standing_desk_set_height
+            data:
+              value: "{{ position / 100 * (119 - 70.6) + 70.6 }}"

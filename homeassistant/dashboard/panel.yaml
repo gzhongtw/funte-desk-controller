@@ -1,0 +1,94 @@
+type: vertical-stack
+cards:
+  - type: custom:mushroom-template-card
+    primary: 升降桌
+    secondary: >-
+      {{ states("sensor.standing_desk_height") | float(0) | round(1) }} cm ({{
+      states("sensor.standing_desk_height_pct") | float(0) | round(0) }}%)
+    icon: mdi:desk
+    icon_color: |-
+      {% set h = states("sensor.standing_desk_height") | float(0) %}
+      {% if h < 85 %}orange
+      {% elif h < 100 %}green
+      {% else %}blue{% endif %}
+    fill_container: true
+    multiline_secondary: false
+  - type: horizontal-stack
+    cards:
+      - type: custom:mushroom-template-card
+        primary: 微降
+        icon: mdi:chevron-down
+        icon_color: grey
+        fill_container: true
+        tap_action:
+          action: perform-action
+          perform_action: button.press
+          target:
+            entity_id: button.standing_desk_step_down
+      - type: custom:mushroom-template-card
+        primary: 停止
+        icon: mdi:stop
+        icon_color: red
+        fill_container: true
+        tap_action:
+          action: perform-action
+          perform_action: button.press
+          target:
+            entity_id: button.standing_desk_stop
+      - type: custom:mushroom-template-card
+        primary: 微升
+        icon: mdi:chevron-up
+        icon_color: grey
+        fill_container: true
+        tap_action:
+          action: perform-action
+          perform_action: button.press
+          target:
+            entity_id: button.standing_desk_step_up
+  - type: horizontal-stack
+    cards:
+      - type: custom:mushroom-template-card
+        primary: 位置 1
+        secondary: >-
+          {% set p = states("sensor.standing_desk_position_1") | float(0) %} {%
+          if p > 0 %}{{ p | round(0) }} cm{% else %}未設{% endif %}
+        icon: mdi:numeric-1-circle
+        icon_color: purple
+        fill_container: true
+        tap_action:
+          action: perform-action
+          perform_action: button.press
+          target:
+            entity_id: button.standing_desk_goto_position_1
+      - type: custom:mushroom-template-card
+        primary: 位置 2
+        secondary: >-
+          {% set p = states("sensor.standing_desk_position_2") | float(0) %} {%
+          if p > 0 %}{{ p | round(0) }} cm{% else %}未設{% endif %}
+        icon: mdi:numeric-2-circle
+        icon_color: purple
+        fill_container: true
+        tap_action:
+          action: perform-action
+          perform_action: button.press
+          target:
+            entity_id: button.standing_desk_goto_position_2
+      - type: custom:mushroom-template-card
+        primary: 位置 3
+        secondary: >-
+          {% set p = states("sensor.standing_desk_position_3") | float(0) %} {%
+          if p > 0 %}{{ p | round(0) }} cm{% else %}未設{% endif %}
+        icon: mdi:numeric-3-circle
+        icon_color: purple
+        fill_container: true
+        tap_action:
+          action: perform-action
+          perform_action: button.press
+          target:
+            entity_id: button.standing_desk_goto_position_3
+  - type: custom:mushroom-number-card
+    entity: number.standing_desk_set_height
+    name: 設定高度
+    icon: mdi:tape-measure
+    display_mode: slider
+    fill_container: true

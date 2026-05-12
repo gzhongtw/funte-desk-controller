@@ -1,0 +1,82 @@
+esphome:
+  name: desk-controller
+  friendly_name: Desk Controller
+  on_boot:
+    priority: 0
+    then:
+      - lambda: "id(my_desk).request_physical_limits();"
+      - delay: 0.1s
+      - lambda: "id(my_desk).request_limits();"
+      - delay: 0.1s
+      - lambda: "id(my_desk).request_settings();"
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+external_components:
+  - source:
+      type: git
+      url: https://github.com/Rocka84/esphome_components/
+    components: [ jiecang_desk_controller ]
+
+uart:
+  id: uart_bus
+  tx_pin: GPIO17   # 板上絲印 TX2 → 接到桌控 RJ12 Pin 5 (RX)
+  rx_pin: GPIO16   # 板上絲印 RX2 → 接到桌控 RJ12 Pin 3 (TX)
+  baud_rate: 9600
+
+jiecang_desk_controller:
+  id: my_desk
+  sensors:
+    height:
+      name: "Height"
+    height_pct:
+      name: "Height Pct"
+    height_min:
+      name: "Height Min"
+    height_max:
+      name: "Height Max"
+    position1:
+      name: "Position 1"
+    position2:
+      name: "Position 2"
+    position3:
+      name: "Position 3"
+    position4:
+      name: "Position 4"
+  numbers:
+    height:
+      name: "Set Height"
+  buttons:
+    move_up:
+      name: "Move Up"
+    move_down:
+      name: "Move Down"
+    stop:
+      name: "Stop"
+    step_up:
+      name: "Step Up"
+    step_down:
+      name: "Step Down"
+    position1:
+      name: "Goto Position 1"
+    position2:
+      name: "Goto Position 2"
+    position3:
+      name: "Goto Position 3"
+    position4:
+      name: "Goto Position 4"
+    save_position:
+      name: "Save Position"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+api:
+ota:
+  - platform: esphome
+
+logger:
+  level: INFO

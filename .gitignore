@@ -1,0 +1,31 @@
+# 機敏資訊
+secrets.yaml
+*secrets.yaml
+!secrets.example.yaml
+
+# 編譯產物
+*.bin
+*.elf
+*.factory.bin
+.esphome/
+build/
+
+# 系統檔
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 開發工具
+.vscode/
+.idea/
+*.swp
+*~
+
+# Log 與暫存
+Log/
+*.log
+__pycache__/
+
+# 原始 HEIC（GitHub 不友善的格式）
+*.HEIC
+*.heic
