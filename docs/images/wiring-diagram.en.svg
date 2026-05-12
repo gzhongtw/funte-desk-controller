@@ -93,7 +93,7 @@
 
   <circle cx="800" cy="336" r="6" class="esp-pin" />
   <text x="816" y="340" class="pin-sub">VIN/3V3</text>
-  <text x="924" y="340" text-anchor="end" class="pin-label">do not connect</text>
+  <text x="924" y="340" text-anchor="end" class="pin-label">skip</text>
 
   <!-- ============ RJ12 Cable ============ -->
   <path d="M 240 260 Q 310 270 380 220" class="wire wire-rj12" />
@@ -117,11 +117,11 @@
   <line x1="60"  y1="552" x2="115" y2="552" class="wire wire-gnd" />
   <text x="125" y="556" class="pin">GND (common ground, required)</text>
 
-  <line x1="380" y1="552" x2="435" y2="552" class="wire wire-rx" />
-  <text x="445" y="556" class="pin">Controller TX → ESP32 RX2 (read height)</text>
+  <line x1="340" y1="552" x2="395" y2="552" class="wire wire-rx" />
+  <text x="405" y="556" class="pin">Controller TX → RX2 (read height)</text>
 
-  <line x1="710" y1="552" x2="765" y2="552" class="wire wire-tx" />
-  <text x="775" y="556" class="pin">Controller RX ← ESP32 TX2 (send commands)</text>
+  <line x1="640" y1="552" x2="695" y2="552" class="wire wire-tx" />
+  <text x="705" y="556" class="pin">Controller RX ← TX2 (send commands)</text>
 
   <text x="60" y="590" class="note">Critical: number the terminal from the RIGHT of the screw (metal) face — counting the other way puts TX/RX on NC.</text>
 </svg>
