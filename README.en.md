@@ -6,7 +6,7 @@ Connect a **Funte standing desk** (Jiecang **JCB35M12C** controller) to **Home A
 
 > **No need to disassemble the desk or splice the original handset cable.** Use only the spare RJ12 port on the control box.
 
-![Architecture](docs/images/architecture.svg)
+![Architecture](docs/images/architecture.en.svg)
 
 ## What You Get
 
@@ -47,7 +47,7 @@ Connect a **Funte standing desk** (Jiecang **JCB35M12C** controller) to **Home A
 
 The green terminal block adapter that comes with the controller is **numbered from the right side when viewed from the screw face (metal side)**. Counting the wrong way will cost you hours of debugging (speaking from experience).
 
-![Wiring Diagram](docs/images/wiring-diagram.svg)
+![Wiring Diagram](docs/images/wiring-diagram.en.svg)
 
 | Green Terminal | RJ12 Pin | ESP32 Pin (silkscreen) |
 |----------------|----------|------------------------|
