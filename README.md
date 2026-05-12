@@ -1,5 +1,7 @@
 # Funte 升降桌智慧化：ESP32 + ESPHome + Home Assistant + Apple Home
 
+**繁體中文** | [English](README.en.md)
+
 把 **Funte 升降桌**（Jiecang **JCB35M12C** 控制器）透過 ESP32 接進 **Home Assistant**，並進一步以 template cover 包裝後丟給 **Apple Home**，用 iPhone / Siri 控制坐站切換、設定高度。
 
 > **不需要拆桌、不需要破壞原廠手控器線。** 只用控制盒上原本閒置的副 RJ12 接孔即可。
