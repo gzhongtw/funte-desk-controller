@@ -9,50 +9,50 @@
   <text fill="#1f2328" font-size="20" font-weight="700" text-anchor="middle" x="450" y="36">System Architecture</text>
 
   <!-- Standing Desk -->
-  <rect fill="#fff8c5" height="180" rx="10" stroke="#9a6700" stroke-width="2" width="180" x="40" y="80"/>
-  <text fill="#1f2328" font-size="15" font-weight="700" text-anchor="middle" x="130" y="110">Standing Desk</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="130" y="130">Funte + JCB35M12C</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="130" y="160">─────────</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="130" y="184">Spare RJ12 (UART)</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="130" y="204">↓ bidirectional 9600 baud</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="130" y="234">Height 70.6~119 cm</text>
+  <rect fill="#fff8c5" height="180" rx="10" stroke="#9a6700" stroke-width="2" width="180" x="30" y="80"/>
+  <text fill="#1f2328" font-size="15" font-weight="700" text-anchor="middle" x="120" y="110">Standing Desk</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="120" y="130">Funte + JCB35M12C</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="120" y="160">─────────</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="120" y="184">Spare RJ12 (UART)</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="120" y="204">↓ bidirectional 9600 baud</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="120" y="234">Height 70.6~119 cm</text>
 
   <!-- ESP32 -->
-  <rect fill="#ddf4ff" height="180" rx="10" stroke="#0969da" stroke-width="2" width="180" x="270" y="80"/>
-  <text fill="#1f2328" font-size="15" font-weight="700" text-anchor="middle" x="360" y="110">ESP-WROOM-32</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="360" y="130">+ ESPHome firmware</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="360" y="160">─────────</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="360" y="184">jiecang_desk_controller</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="360" y="204">(Rocka84 external)</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="360" y="234">WiFi → HA API</text>
+  <rect fill="#ddf4ff" height="180" rx="10" stroke="#0969da" stroke-width="2" width="180" x="260" y="80"/>
+  <text fill="#1f2328" font-size="15" font-weight="700" text-anchor="middle" x="350" y="110">ESP-WROOM-32</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="350" y="130">+ ESPHome firmware</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="350" y="160">─────────</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="350" y="184">jiecang_desk_controller</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="350" y="204">(Rocka84 external)</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="350" y="234">WiFi → HA API</text>
 
   <!-- HA -->
-  <rect fill="#dafbe1" height="180" rx="10" stroke="#1a7f37" stroke-width="2" width="180" x="500" y="80"/>
-  <text fill="#1f2328" font-size="15" font-weight="700" text-anchor="middle" x="590" y="110">Home Assistant</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="590" y="130">ESPHome integration</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="590" y="160">─────────</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="590" y="184">sensor / button / number</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="590" y="204">+ template cover</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="590" y="234">+ Mushroom dashboard</text>
+  <rect fill="#dafbe1" height="180" rx="10" stroke="#1a7f37" stroke-width="2" width="180" x="490" y="80"/>
+  <text fill="#1f2328" font-size="15" font-weight="700" text-anchor="middle" x="580" y="110">Home Assistant</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="580" y="130">ESPHome integration</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="580" y="160">─────────</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="580" y="184">sensor / button / number</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="580" y="204">+ template cover</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="580" y="234">+ Mushroom dashboard</text>
 
   <!-- Apple Home -->
-  <rect fill="#fbefff" height="180" rx="10" stroke="#8250df" stroke-width="2" width="160" x="720" y="80"/>
-  <text fill="#1f2328" font-size="15" font-weight="700" text-anchor="middle" x="800" y="110">Apple Home</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="800" y="130">HomeKit Bridge</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="800" y="160">─────────</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="800" y="184">Desk = shade</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="800" y="204">% slider for height</text>
-  <text fill="#57606a" font-size="12" text-anchor="middle" x="800" y="234">Hey Siri</text>
+  <rect fill="#fbefff" height="180" rx="10" stroke="#8250df" stroke-width="2" width="160" x="710" y="80"/>
+  <text fill="#1f2328" font-size="15" font-weight="700" text-anchor="middle" x="790" y="110">Apple Home</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="790" y="130">HomeKit Bridge</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="790" y="160">─────────</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="790" y="184">Desk = shade</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="790" y="204">% slider for height</text>
+  <text fill="#57606a" font-size="12" text-anchor="middle" x="790" y="234">Hey Siri</text>
 
   <!-- Arrows -->
-  <path d="m220 170h50" fill="none" marker-end="url(#a)" stroke="#424a53" stroke-width="2"/>
-  <text fill="#57606a" font-size="11" text-anchor="middle" x="245" y="158">RJ12</text>
+  <path d="m210 170h50" fill="none" marker-end="url(#a)" stroke="#424a53" stroke-width="2"/>
+  <text fill="#57606a" font-size="11" text-anchor="middle" x="235" y="158">RJ12</text>
 
-  <path d="m450 170h50" fill="none" marker-end="url(#a)" stroke="#424a53" stroke-width="2"/>
-  <text fill="#57606a" font-size="11" text-anchor="middle" x="475" y="158">WiFi</text>
+  <path d="m440 170h50" fill="none" marker-end="url(#a)" stroke="#424a53" stroke-width="2"/>
+  <text fill="#57606a" font-size="11" text-anchor="middle" x="465" y="158">WiFi</text>
 
-  <path d="m680 170h40" fill="none" marker-end="url(#a)" stroke="#424a53" stroke-width="2"/>
-  <text fill="#57606a" font-size="11" text-anchor="middle" x="700" y="158">mDNS</text>
+  <path d="m670 170h40" fill="none" marker-end="url(#a)" stroke="#424a53" stroke-width="2"/>
+  <text fill="#57606a" font-size="11" text-anchor="middle" x="690" y="158">mDNS</text>
 
   <text fill="#57606a" font-size="12" text-anchor="middle" x="450" y="310">All commands and height readouts are relayed by the ESP32 — the desk and phone never talk directly.</text>
   <text fill="#57606a" font-size="12" text-anchor="middle" x="450" y="332">No desk teardown, no splicing the original handset cable — just the spare RJ12 port.</text>
